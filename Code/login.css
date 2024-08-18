@@ -1,0 +1,171 @@
+/* Resetting margin, padding, and setting box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting the body background, font, and color */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6f2ff;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Styling the header */
+.header {
+    background-color: #00264d; /* Darker blue for a professional look */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Styling the logo */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Styling the navbar */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #00509e; /* Medium blue for buttons */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar ul li a:hover,
+.navbar ul li .login-btn {
+    background-color: #003366; /* Slightly darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth on hover */
+}
+
+/* Styling the login container */
+.login-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 80px; /* Adds some margin to avoid overlap with the header */
+}
+
+/* Styling the heading */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #00264d;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Styling the input groups */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+/* Styling the password input field and icons */
+.password-wrapper {
+    position: relative;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.bi-eye, .bi-eye-slash {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Styling for the required asterisk */
+label .required {
+    color: red;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Styling for input fields */
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 40px); /* Adjusting width to account for icons */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Styling the CAPTCHA section */
+.captcha-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#captchaCanvas {
+    display: block; /* Ensures the canvas takes its own line */
+    margin-bottom: 10px; /* Space between CAPTCHA and label text */
+}
+
+.captcha-group label {
+    display: block; /* Ensures label takes its own line below the CAPTCHA */
+    margin-bottom: 5px; /* Space between label text and input field */
+}
+/* Styling the button */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #00509e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Verdana', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #003366;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Error message styling */
+#error-msg {
+    color: red;
+    margin-top: 15px;
+    font-size: 16px;
+}

@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    background-color: #00264d; /* Darker blue for a professional look */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Verdana', sans-serif;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #00509e; /* Medium blue for buttons */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar ul li a:hover,
+.navbar ul li .login-btn {
+    background-color: #003366; /* Slightly darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth on hover */
+}
+
+.hero {
+    background-color: #e6f2ff; /* Light blue background for a calming effect */
+    padding: 100px 20px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #00264d; /* Matching the header color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #00509e;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #003366;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color: #ffffff; /* Clean white background for professionalism */
+    border-top: 1px solid #ddd; /* Subtle separation from hero section */
+    border-bottom: 1px solid #ddd;
+}
+
+.service {
+    text-align: center;
+    max-width: 300px;
+    color: #333;
+}
+
+.service h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #00264d;
+}
+
+.service p {
+    font-size: 16px;
+    color: #666;
+}
+
+.security {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.security-content {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.security h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #00264d;
+}
+
+.security p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.security ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.security ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.footer {
+    background-color: #00264d;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Verdana', sans-serif;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content p {
+    margin-bottom: 5px;
+}
+
+.footer-content a {
+    color: #ffcc00; /* Gold color for links, matching a premium theme */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #ff9900; /* Darker gold on hover */
+}
+
+.products-services {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.products-services h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #00264d;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-item {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.product-item h3 {
+    font-size: 24px;
+    color: #00264d;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #666;
+}
+
